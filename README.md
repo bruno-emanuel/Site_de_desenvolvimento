@@ -1,4 +1,4 @@
-Site institucional desenvolvido em HTML para a empresa Hi-Tech Solutions, do técnico em informática Ivan Leal. :contentReference[oaicite:0]{index=0}
+Site institucional desenvolvido em HTML para a empresa Hi-Tech Solutions, do técnico em informática Ivan Leal.
 
 ## Sobre o projeto
 
