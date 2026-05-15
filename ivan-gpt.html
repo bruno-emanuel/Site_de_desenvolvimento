@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Ivan Leal - Técnico em Informática em Luziânia | Hi-Tech Solutions</title>
+
+  <meta
+    name="description"
+    content="Assistência técnica especializada em computadores, notebooks, formatação, upgrades, redes e suporte em Luziânia - GO. Atendimento rápido via WhatsApp."
+  />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+
+  <style>
+    * {
+      font-family: 'Inter', sans-serif;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    .glass {
+      backdrop-filter: blur(12px);
+      background: rgba(255,255,255,0.08);
+    }
+
+    .hero-gradient {
+      background:
+        linear-gradient(to bottom, rgba(0,0,0,0.75), rgba(0,0,0,0.88)),
+        url('https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=2070&auto=format&fit=crop');
+      background-size: cover;
+      background-position: center;
+    }
+
+    .service-card:hover {
+      transform: translateY(-6px);
+    }
+
+    .review-scroll::-webkit-scrollbar {
+      height: 6px;
+    }
+
+    .review-scroll::-webkit-scrollbar-thumb {
+      background: #d4d4d4;
+      border-radius: 999px;
+    }
+  </style>
+</head>
+
+<body class="bg-zinc-950 text-white">
+
+  <!-- HEADER -->
+  <header class="fixed top-0 left-0 w-full z-50 border-b border-white/10 bg-black/70 backdrop-blur-xl">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+
+      <div>
+        <h2 class="text-xl font-extrabold tracking-tight">
+          Ivan Leal
+        </h2>
+
+        <p class="text-sm text-zinc-400">
+          Hi-Tech Solutions
+        </p>
+      </div>
+
+      <a
+        href="https://wa.me/5561982386026"
+        target="_blank"
+        class="hidden md:flex items-center gap-2 bg-green-500 hover:bg-green-400 transition px-5 py-3 rounded-xl font-semibold text-black"
+      >
+        <i data-lucide="message-circle"></i>
+        Chamar no WhatsApp
+      </a>
+
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero-gradient min-h-screen flex items-center">
+
+    <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center pt-28">
+
+      <!-- LEFT -->
+      <div>
+
+        <div class="inline-flex items-center gap-2 bg-green-500/15 border border-green-500/30 text-green-300 px-4 py-2 rounded-full text-sm font-medium mb-8">
+          <i data-lucide="shield-check" class="w-4 h-4"></i>
+          Atendimento confiável em Luziânia - GO
+        </div>
+
+        <h1 class="text-5xl md:text-6xl font-extrabold leading-tight tracking-tight">
+          Seu computador
+          <span class="text-green-400">
+            rápido, seguro
+          </span>
+          e funcionando novamente.
+        </h1>
+
+        <p class="mt-8 text-xl text-zinc-300 leading-relaxed max-w-2xl">
+          Formatação, manutenção, upgrades, limpeza, instalação de programas,
+          suporte técnico e soluções completas para computadores e notebooks.
+          Atendimento com excelência e mais de
+          <span class="font-bold text-white">
+            130 avaliações 5 estrelas.
+          </span>
+        </p>
+
+        <!-- TRUST -->
+        <div class="mt-10 flex flex-wrap gap-6">
+
+          <div class="flex items-center gap-3">
+            <div class="w-12 h-12 rounded-xl bg-white/10 flex items-center justify-center">
+              <i data-lucide="star" class="text-yellow-400"></i>
+            </div>
+
+            <div>
+              <p class="font-bold text-lg">5.0</p>
+              <p class="text-zinc-400 text-sm">130 avaliações</p>
+            </div>
+          </div>
+
+          <div class="flex items-center gap-3">
+            <div class="w-12 h-12 rounded-xl bg-white/10 flex items-center justify-center">
+              <i data-lucide="clock-3"></i>
+            </div>
+
+            <div>
+              <p class="font-bold text-lg">Atendimento rápido</p>
+              <p class="text-zinc-400 text-sm">Resposta via WhatsApp</p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- CTA -->
+        <div class="mt-12 flex flex-col sm:flex-row gap-4">
+
+          <a
+            href="https://wa.me/5561982386026"
+            target="_blank"
+            class="bg-green-500 hover:bg-green-400 transition text-black px-8 py-4 rounded-2xl font-bold text-lg flex items-center justify-center gap-3 shadow-2xl shadow-green-500/20"
+          >
+            <i data-lucide="message-circle"></i>
+            Solicitar orçamento
+          </a>
+
+          <a
+            href="#servicos"
+            class="border border-white/15 hover:bg-white/10 transition px-8 py-4 rounded-2xl font-semibold flex items-center justify-center gap-3"
+          >
+            <i data-lucide="monitor-smartphone"></i>
+            Ver serviços
+          </a>
+
+        </div>
+
+      </div>
+
+      <!-- RIGHT -->
+      <div class="relative">
+
+        <div class="rounded-3xl overflow-hidden border border-white/10 shadow-2xl shadow-black/40">
+
+          <!-- VIDEO PLACEHOLDER -->
+          <div class="relative aspect-video bg-zinc-900">
+
+            <img
+              src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=2070&auto=format&fit=crop"
+              class="w-full h-full object-cover opacity-80"
+              alt="Assistência técnica"
+            />
+
+            <div class="absolute inset-0 bg-black/35"></div>
+
+            <button class="absolute inset-0 flex items-center justify-center">
+
+              <div class="w-24 h-24 rounded-full bg-white/15 border border-white/20 backdrop-blur-xl flex items-center justify-center hover:scale-105 transition">
+                <i data-lucide="play" class="w-10 h-10 text-white fill-white"></i>
+              </div>
+
+            </button>
+
+          </div>
+
+        </div>
+
+        <!-- FLOAT CARD -->
+        <div class="absolute -bottom-8 -left-8 glass border border-white/10 rounded-2xl p-5 hidden md:block">
+
+          <div class="flex items-center gap-4">
+
+            <div class="w-14 h-14 rounded-2xl bg-green-500 flex items-center justify-center">
+              <i data-lucide="badge-check" class="text-black"></i>
+            </div>
+
+            <div>
+              <p class="font-bold text-lg">
+                Atendimento profissional
+              </p>
+
+              <p class="text-zinc-300 text-sm">
+                Qualidade e confiança comprovadas
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- SERVICES -->
+  <section id="servicos" class="py-28 bg-zinc-900">
+
+    <div class="max-w-7xl mx-auto px-6">
+
+      <div class="text-center max-w-3xl mx-auto">
+
+        <p class="text-green-400 font-semibold uppercase tracking-[0.2em]">
+          Serviços
+        </p>
+
+        <h2 class="mt-4 text-4xl md:text-5xl font-extrabold">
+          Soluções completas em informática
+        </h2>
+
+        <p class="mt-6 text-zinc-400 text-lg">
+          Atendimento especializado para resolver problemas, melhorar desempenho
+          e aumentar a vida útil do seu equipamento.
+        </p>
+
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-20">
+
+        <!-- CARD -->
+        <div class="service-card transition duration-300 bg-zinc-950 border border-white/10 rounded-3xl p-8">
+
+          <div class="w-16 h-16 rounded-2xl bg-green-500/15 flex items-center justify-center">
+            <i data-lucide="laptop" class="text-green-400 w-8 h-8"></i>
+          </div>
+
+          <h3 class="mt-6 text-2xl font-bold">
+            Formatação e instalação
+          </h3>
+
+          <p class="mt-4 text-zinc-400 leading-relaxed">
+            Formatação completa, instalação de Windows, drivers, programas e otimização do sistema.
+          </p>
+
+        </div>
+
+        <!-- CARD -->
+        <div class="service-card transition duration-300 bg-zinc-950 border border-white/10 rounded-3xl p-8">
+
+          <div class="w-16 h-16 rounded-2xl bg-green-500/15 flex items-center justify-center">
+            <i data-lucide="cpu" class="text-green-400 w-8 h-8"></i>
+          </div>
+
+          <h3 class="mt-6 text-2xl font-bold">
+            Upgrade de desempenho
+          </h3>
+
+          <p class="mt-4 text-zinc-400 leading-relaxed">
+            Upgrade de SSD, memória RAM e melhorias para deixar seu computador muito mais rápido.
+          </p>
+
+        </div>
+
+        <!-- CARD -->
+        <div class="service-card transition duration-300 bg-zinc-950 border border-white/10 rounded-3xl p-8">
+
+          <div class="w-16 h-16 rounded-2xl bg-green-500/15 flex items-center justify-center">
+            <i data-lucide="shield-alert" class="text-green-400 w-8 h-8"></i>
+          </div>
+
+          <h3 class="mt-6 text-2xl font-bold">
+            Remoção de vírus
+          </h3>
+
+          <p class="mt-4 text-zinc-400 leading-relaxed">
+            Limpeza completa de vírus, malwares e proteção para seus dados e arquivos.
+          </p>
+
+        </div>
+
+        <!-- CARD -->
+        <div class="service-card transition duration-300 bg-zinc-950 border border-white/10 rounded-3xl p-8">
+
+          <div class="w-16 h-16 rounded-2xl bg-green-500/15 flex items-center justify-center">
+            <i data-lucide="wifi" class="text-green-400 w-8 h-8"></i>
+          </div>
+
+          <h3 class="mt-6 text-2xl font-bold">
+            Redes e internet
+          </h3>
+
+          <p class="mt-4 text-zinc-400 leading-relaxed">
+            Configuração de redes, roteadores, Wi-Fi e melhorias na conexão.
+          </p>
+
+        </div>
+
+        <!-- CARD -->
+        <div class="service-card transition duration-300 bg-zinc-950 border border-white/10 rounded-3xl p-8">
+
+          <div class="w-16 h-16 rounded-2xl bg-green-500/15 flex items-center justify-center">
+            <i data-lucide="hard-drive" class="text-green-400 w-8 h-8"></i>
+          </div>
+
+          <h3 class="mt-6 text-2xl font-bold">
+            Backup e recuperação
+          </h3>
+
+          <p class="mt-4 text-zinc-400 leading-relaxed">
+            Recuperação de arquivos importantes e soluções de backup seguro.
+          </p>
+
+        </div>
+
+        <!-- CARD -->
+        <div class="service-card transition duration-300 bg-zinc-950 border border-white/10 rounded-3xl p-8">
+
+          <div class="w-16 h-16 rounded-2xl bg-green-500/15 flex items-center justify-center">
+            <i data-lucide="monitor-check" class="text-green-400 w-8 h-8"></i>
+          </div>
+
+          <h3 class="mt-6 text-2xl font-bold">
+            Suporte técnico
+          </h3>
+
+          <p class="mt-4 text-zinc-400 leading-relaxed">
+            Atendimento para empresas e clientes residenciais com suporte especializado.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- REVIEWS -->
+  <section class="py-28 bg-black">
+
+    <div class="max-w-7xl mx-auto px-6">
+
+      <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-8">
+
+        <div>
+
+          <p class="text-green-400 font-semibold uppercase tracking-[0.2em]">
+            Avaliações
+          </p>
+
+          <h2 class="mt-4 text-4xl md:text-5xl font-extrabold">
+            Clientes satisfeitos
+          </h2>
+
+        </div>
+
+        <div class="flex items-center gap-4">
+
+          <div class="flex text-yellow-400">
+            ★★★★★
+          </div>
+
+          <div>
+            <p class="font-bold text-xl">
+              5.0 de 5
+            </p>
+
+            <p class="text-zinc-400">
+              Baseado em 130 avaliações
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="review-scroll flex gap-6 overflow-x-auto mt-16 pb-4">
+
+        <!-- REVIEW -->
+        <div class="min-w-[360px] bg-zinc-900 border border-white/10 rounded-3xl p-8">
+
+          <div class="flex items-center justify-between">
+
+            <div class="flex items-center gap-4">
+
+              <div class="w-14 h-14 rounded-full bg-green-500 flex items-center justify-center font-bold text-black">
+                M
+              </div>
+
+              <div>
+                <p class="font-semibold">
+                  Marcos Oliveira
+                </p>
+
+                <div class="text-yellow-400">
+                  ★★★★★
+                </div>
+              </div>
+
+            </div>
+
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg"
+              class="w-7 h-7"
+              alt="Google"
+            />
+
+          </div>
+
+          <p class="mt-6 text-zinc-300 leading-relaxed">
+            Excelente atendimento. Meu notebook ficou muito mais rápido depois do upgrade com SSD.
+          </p>
+
+        </div>
+
+        <!-- REVIEW -->
+        <div class="min-w-[360px] bg-zinc-900 border border-white/10 rounded-3xl p-8">
+
+          <div class="flex items-center justify-between">
+
+            <div class="flex items-center gap-4">
+
+              <div class="w-14 h-14 rounded-full bg-blue-500 flex items-center justify-center font-bold text-white">
+                A
+              </div>
+
+              <div>
+                <p class="font-semibold">
+                  Amanda Costa
+                </p>
+
+                <div class="text-yellow-400">
+                  ★★★★★
+                </div>
+              </div>
+
+            </div>
+
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg"
+              class="w-7 h-7"
+              alt="Google"
+            />
+
+          </div>
+
+          <p class="mt-6 text-zinc-300 leading-relaxed">
+            Atendimento rápido e muito profissional. Resolveu o problema do meu PC no mesmo dia.
+          </p>
+
+        </div>
+
+        <!-- REVIEW -->
+        <div class="min-w-[360px] bg-zinc-900 border border-white/10 rounded-3xl p-8">
+
+          <div class="flex items-center justify-between">
+
+            <div class="flex items-center gap-4">
+
+              <div class="w-14 h-14 rounded-full bg-orange-500 flex items-center justify-center font-bold text-white">
+                J
+              </div>
+
+              <div>
+                <p class="font-semibold">
+                  João Ferreira
+                </p>
+
+                <div class="text-yellow-400">
+                  ★★★★★
+                </div>
+              </div>
+
+            </div>
+
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg"
+              class="w-7 h-7"
+              alt="Google"
+            />
+
+          </div>
+
+          <p class="mt-6 text-zinc-300 leading-relaxed">
+            Serviço honesto, preço justo e atendimento excelente. Recomendo muito.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- MAP -->
+  <section class="py-28 bg-zinc-950">
+
+    <div class="max-w-7xl mx-auto px-6">
+
+      <div class="grid lg:grid-cols-2 gap-16 items-center">
+
+        <!-- INFO -->
+        <div>
+
+          <p class="text-green-400 font-semibold uppercase tracking-[0.2em]">
+            Localização
+          </p>
+
+          <h2 class="mt-4 text-4xl md:text-5xl font-extrabold">
+            Atendimento em Luziânia - GO
+          </h2>
+
+          <div class="mt-10 space-y-6">
+
+            <div class="flex gap-4">
+
+              <div class="w-14 h-14 rounded-2xl bg-white/5 flex items-center justify-center">
+                <i data-lucide="map-pin"></i>
+              </div>
+
+              <div>
+                <h3 class="font-bold text-xl">
+                  Endereço
+                </h3>
+
+                <p class="text-zinc-400 mt-1">
+                  R. Bebedouro, Quadra 18 - Lote 31
+                </p>
+              </div>
+
+            </div>
+
+            <div class="flex gap-4">
+
+              <div class="w-14 h-14 rounded-2xl bg-white/5 flex items-center justify-center">
+                <i data-lucide="globe"></i>
+              </div>
+
+              <div>
+                <h3 class="font-bold text-xl">
+                  Website
+                </h3>
+
+                <a
+                  href="https://www.ivanlealti.com"
+                  target="_blank"
+                  class="text-green-400 hover:text-green-300 transition"
+                >
+                  www.ivanlealti.com
+                </a>
+              </div>
+
+            </div>
+
+            <div class="flex gap-4">
+
+              <div class="w-14 h-14 rounded-2xl bg-white/5 flex items-center justify-center">
+                <i data-lucide="phone"></i>
+              </div>
+
+              <div>
+                <h3 class="font-bold text-xl">
+                  WhatsApp
+                </h3>
+
+                <a
+                  href="https://wa.me/5561982386026"
+                  target="_blank"
+                  class="text-green-400 hover:text-green-300 transition"
+                >
+                  +55 61 98238-6026
+                </a>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- MAP -->
+        <div class="rounded-3xl overflow-hidden border border-white/10 shadow-2xl shadow-black/30">
+
+          <iframe
+            src="https://www.google.com/maps?q=R.%20Bebedouro,%20Quadra%2018%20-%20Lote%2031,%20Luzi%C3%A2nia%20-%20GO&output=embed"
+            width="100%"
+            height="500"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- CTA -->
+  <section class="py-28 bg-green-500">
+
+    <div class="max-w-5xl mx-auto px-6 text-center">
+
+      <h2 class="text-4xl md:text-6xl font-extrabold text-black leading-tight">
+        Precisa resolver o problema do seu computador?
+      </h2>
+
+      <p class="mt-8 text-black/80 text-xl leading-relaxed">
+        Fale agora mesmo no WhatsApp e receba atendimento rápido e especializado.
+      </p>
+
+      <a
+        href="https://wa.me/5561982386026"
+        target="_blank"
+        class="mt-10 inline-flex items-center gap-3 bg-black hover:bg-zinc-900 transition text-white px-10 py-5 rounded-2xl text-xl font-bold shadow-2xl"
+      >
+        <i data-lucide="message-circle"></i>
+        Chamar no WhatsApp
+      </a>
+
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-white/10 bg-black">
+
+    <div class="max-w-7xl mx-auto px-6 py-10 flex flex-col md:flex-row gap-6 justify-between items-center">
+
+      <div>
+        <h3 class="font-bold text-lg">
+          Ivan Leal - Hi-Tech Solutions
+        </h3>
+
+        <p class="text-zinc-500 mt-1">
+          Assistência técnica especializada em Luziânia - GO
+        </p>
+      </div>
+
+      <div class="flex items-center gap-6">
+
+        <a
+          href="https://wa.me/5561982386026"
+          target="_blank"
+          class="hover:text-green-400 transition"
+        >
+          WhatsApp
+        </a>
+
+        <a
+          href="https://www.ivanlealti.com"
+          target="_blank"
+          class="hover:text-green-400 transition"
+        >
+          Site
+        </a>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+  <!-- FLOATING BUTTON -->
+  <a
+    href="https://wa.me/5561982386026"
+    target="_blank"
+    class="fixed bottom-6 right-6 z-50 bg-green-500 hover:bg-green-400 transition w-16 h-16 rounded-full flex items-center justify-center shadow-2xl shadow-green-500/40"
+  >
+    <i data-lucide="message-circle" class="text-black w-8 h-8"></i>
+  </a>
+
+  <script>
+    lucide.createIcons();
+  </script>
+
+</body>
+</html>
